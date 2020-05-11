@@ -13,6 +13,14 @@
   }
 }
 
+.BlackBackGround {
+  background-color: #282c34;
+}
+
+.LightBackGround {
+  background-color: aliceblue;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -32,6 +40,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
