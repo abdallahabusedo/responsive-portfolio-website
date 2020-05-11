@@ -16,8 +16,12 @@ export default class MyPhoto extends Component {
         <div className="SecText">
           I Love to design a good websites and love to learn more every day{' '}
         </div>
-        <div className="PHO">
-          <img src={Profile} className="Profile" alt=""></img>
+        <div>
+          <div class="outer-div container">
+            <div class="inner-div">
+              <img src={Profile} className="Profile" alt=""></img>
+            </div>
+          </div>
         </div>
       </div>
     );

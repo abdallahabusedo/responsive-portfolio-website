@@ -12,12 +12,32 @@
 
 }
 
+.Logo {
+    float: left;
+
+}
+
+.RightCon a {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    display: block;
+}
+
+.RightCon a {
+    color: white;
+}
+
+
 .Nave {
     padding-bottom: 100px;
 }
 
 nav {
-    background: transparent;
+    background: #162447;
 }
 
 .Profile {
@@ -25,22 +45,22 @@ nav {
     margin: 0 auto;
     left: 0;
     right: 0;
-    width: 250px;
-    margin-top: 20px;
+    width: 230px;
+    margin-top: 25px;
     border-radius: 100%;
 }
 
-
-.FirstPart {
-    position: absolute;
-    top: 0;
+.Pic {
+    border-radius: 200%;
+    position: relative;
+    margin: 0 auto;
     left: 0;
-    width: 100%;
-    height: 500px;
-    z-index: -1;
-    background-color: #343a40;
-    rotate: 50%;
+    right: 0;
+    width: 230px;
+    z-index: 99;
+    margin-top: 30px;
 }
+
 
 .MainText {
     font-size: 50px;
@@ -57,9 +77,70 @@ nav {
 .IntSection {
     margin-top: 50px;
     padding-top: 50px;
-    background-color: rgb(255, 182, 46);
+    padding-bottom: 50px;
+    background-color: #1f4068;
+    height: 50%;
 }
 
+.MyName {
+    font-size: 50px;
+    color: white;
+    font-family: 'Play',
+        sans-serif;
+    align-items: center;
+    text-align: center;
+}
+
+.MyBio {
+    font-size: 20px;
+    color: white;
+    font-family: 'Play',
+        sans-serif;
+    align-items: center;
+    text-align: center;
+    width: 700px;
+    z-index: 2;
+
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    padding: 0 20px;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.card {
+    margin-top: 30px;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+
+    left: 0;
+    right: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+
+}
+
+.APic {
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+}
 
 @media (max-width : 770px) {
     .MainText {
@@ -69,4 +150,69 @@ nav {
     .SecText {
         font-size: 20px;
     }
+
+    .MyName {
+        font-size: 30px;
+
+    }
+
+    .MyBio {
+        font-size: 20px;
+
+    }
+
+    .Pic {
+        width: 90%;
+    }
+
+    .Profile {
+        width: 90%;
+    }
+
+    .outer-div {
+        width: 100%;
+    }
+
+    .inner-div {
+        width: 100%;
+    }
+}
+
+.outer-div {
+    height: 300px;
+    overflow: hidden;
+    width: 40%;
+}
+
+.inner-div {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.7s ease;
+}
+
+.inner-div:hover {
+    transform: scale(1.2) rotate(8deg);
+}
+
+.APic img {
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    display: block;
+    margin-top: 50px;
+}
+
+.APic img:hover {
+    transition: 0.5s;
+    transform: scale(1.2) rotate(360deg);
+}
+.SkillsBk{
+    background-color: #1b1b2f;
+    width: 100%;
+    padding-bottom: 30px;
 }
