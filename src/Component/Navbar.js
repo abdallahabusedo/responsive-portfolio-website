@@ -1,21 +1,22 @@
 import React, {Component} from 'react';
 import Logo from './../assets/Images/Logo.png';
+import './Welcome.css';
 class Navbar extends Component {
   render() {
     return (
-      <div>
-        <nav class="navbar navbar-expand-lg  navbar-dark bg-dark fixed-top">
-          <a class="navbar-brand" href="/">
+      <div className="Nave">
+        <nav className="navbar navbar-expand-lg fixed-top">
+          <a className="navbar-brand" href="/">
             <img
               src={Logo}
               width="70"
               height="55"
-              class="d-inline-block align-top"
-              alt=""
+              className="d-inline-block align-top"
+              alt="Logo"
             />
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarNav"
@@ -23,29 +24,31 @@ class Navbar extends Component {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">
-                  Home <span class="sr-only">(current)</span>
+          <div className="collapse navbar-collapse " id="navbarNav">
+            <ul className="navbar-nav ">
+              <li className="nav-item EPages">
+                <a className="nav-link" href="/About">
+                  About
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Features
+              <li className="nav-item EPages">
+                <a className="nav-link" href="/Projects">
+                  Projects
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Pricing
+              <li className="nav-item EPages">
+                <a className="nav-link" href="/Contact">
+                  Contact
                 </a>
               </li>
             </ul>
           </div>
         </nav>
+
       </div>
+      
     );
   }
 }
