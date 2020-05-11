@@ -6,7 +6,7 @@ class Navbar extends Component {
     return (
       <div className="Nave">
         <nav className="navbar navbar-expand-lg fixed-top">
-          <a className="navbar-brand" href="/">
+          <a className="navbar-brand Logo" href="/">
             <img
               src={Logo}
               width="70"
@@ -26,29 +26,27 @@ class Navbar extends Component {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse " id="navbarNav">
-            <ul className="navbar-nav ">
-              <li className="nav-item EPages">
-                <a className="nav-link" href="/About">
-                  About
+          <div className="collapse navbar-collapse RightCon row" id="navbarNav">
+            <ul className="row ">
+              <div className="column EPages">
+                <a className="nav-link nav-links" href="/About">
+                  Home
                 </a>
-              </li>
-              <li className="nav-item EPages">
-                <a className="nav-link" href="/Projects">
+              </div>
+              <div className="column EPages">
+                <a className="nav-link nav-links" href="/Projects">
                   Projects
                 </a>
-              </li>
-              <li className="nav-item EPages">
-                <a className="nav-link" href="/Contact">
+              </div>
+              <div className="column EPages">
+                <a className="nav-link nav-links" href="/Contact">
                   Contact
                 </a>
-              </li>
+              </div>
             </ul>
           </div>
         </nav>
-
       </div>
-      
     );
   }
 }

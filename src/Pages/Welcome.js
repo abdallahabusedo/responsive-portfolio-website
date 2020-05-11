@@ -3,6 +3,7 @@ import Navbar from './../Component/Navbar';
 import MyPhoto from './../Component/MyPhoto';
 import IntroduceMySelf from './../Component/IntroduceMySelf';
 import Skills from '../Component/Skills';
+import Projects from './../Component/Projects';
 export default class Welcome extends Component {
   render() {
     return (
@@ -11,6 +12,7 @@ export default class Welcome extends Component {
         <MyPhoto />
         <IntroduceMySelf />
         <Skills />
+        <Projects />
       </div>
     );
   }

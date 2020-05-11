@@ -94,8 +94,6 @@ nav {
 .MyBio {
     font-size: 20px;
     color: white;
-    font-family: 'Play',
-        sans-serif;
     align-items: center;
     text-align: center;
     width: 700px;
@@ -113,19 +111,15 @@ nav {
     float: left;
     width: 30%;
     padding: 0 20px;
-    align-items: center;
-    align-self: center;
-    text-align: center;
-    justify-content: center;
+
 }
 
 .card {
     margin-top: 30px;
     align-items: center;
     align-self: center;
-    text-align: center;
+    min-width: 100px;
     justify-content: center;
-
     left: 0;
     right: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -176,6 +170,47 @@ nav {
     .inner-div {
         width: 100%;
     }
+
+    .APic img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .skiTit {
+        font-size: 80%;
+    }
+
+    .card h5 {
+        font-size: 80%;
+    }
+
+    .nav-link {
+        font-size: 80%;
+    }
+}
+
+@media (max-width : 992px) {
+    .APic img {
+        width: 80%;
+        height: 80%;
+        align-items: center;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+
+    }
+
+    .skiTit {
+        font-size: 80%;
+    }
+
+    .card h5 {
+        font-size: 80%;
+    }
+
+    .nav-link {
+        font-size: 80%;
+    }
 }
 
 .outer-div {
@@ -211,8 +246,14 @@ nav {
     transition: 0.5s;
     transform: scale(1.2) rotate(360deg);
 }
-.SkillsBk{
+
+.SkillsBk {
     background-color: #1b1b2f;
     width: 100%;
     padding-bottom: 30px;
+}
+
+.skiTit {
+    color: #467bbb;
+    font-weight: bold;
 }
