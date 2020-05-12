@@ -1,13 +1,20 @@
-  import React from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import Navbar from './Component/Navbar';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+import ProjectDetails from './Pages/ProjectDetails';
 import Welcome from './Pages/Welcome';
 function App() {
   return (
-    <div className="App">
-      <Welcome />
-    </div>
+    <Router>
+      <div className="App">
+        <Route exact path="/">
+          <Welcome />
+        </Route>
+        <Route path="/projects">
+          <ProjectDetails />
+        </Route>
+      </div>
+    </Router>
   );
 }
 

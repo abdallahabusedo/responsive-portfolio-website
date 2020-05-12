@@ -1,259 +1,457 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .Back {
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    width: 100%;
-
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 100%;
 }
 
 .Logo {
-    float: left;
-
+  float: left;
 }
 
 .RightCon a {
-    float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-    display: block;
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  display: block;
 }
 
 .RightCon a {
-    color: white;
+  color: white;
 }
-
 
 .Nave {
-    padding-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 nav {
-    background: #162447;
+  background: #162447;
 }
 
 .Profile {
-    position: relative;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    width: 230px;
-    margin-top: 25px;
-    border-radius: 100%;
+  position: relative;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 230px;
+  margin-top: 25px;
+  border-radius: 100%;
 }
 
 .Pic {
-    border-radius: 200%;
-    position: relative;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    width: 230px;
-    z-index: 99;
-    margin-top: 30px;
+  border-radius: 200%;
+  position: relative;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 230px;
+  z-index: 99;
+  margin-top: 30px;
 }
 
-
 .MainText {
-    font-size: 50px;
-    font-family: 'Play',
-        sans-serif;
+  font-size: 50px;
+  font-family: 'Play', sans-serif;
 }
 
 .SecText {
-    font-size: 20px;
-    font-family: 'Play',
-        sans-serif;
+  font-size: 20px;
+  font-family: 'Play', sans-serif;
 }
 
 .IntSection {
-    margin-top: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: #1f4068;
-    height: 50%;
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #1f4068;
+  height: 50%;
 }
 
 .MyName {
-    font-size: 50px;
-    color: white;
-    font-family: 'Play',
-        sans-serif;
-    align-items: center;
-    text-align: center;
+  font-size: 50px;
+  color: white;
+  font-family: 'Play', sans-serif;
+  align-items: center;
+  text-align: center;
 }
 
 .MyBio {
-    font-size: 20px;
-    color: white;
-    align-items: center;
-    text-align: center;
-    width: 700px;
-    z-index: 2;
-
-}
-
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
+  font-size: 20px;
+  color: white;
+  align-items: center;
+  text-align: center;
+  width: 700px;
+  z-index: 2;
 }
 
 .column {
-    float: left;
-    width: 30%;
-    padding: 0 20px;
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
 
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 950px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .grid-container {
+    display: block;
+  }
 }
 
 .card {
-    margin-top: 30px;
-    align-items: center;
-    align-self: center;
-    min-width: 100px;
-    justify-content: center;
-    left: 0;
-    right: 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
-
+  margin-top: 30px;
+  align-items: center;
+  align-self: center;
+  min-width: 100px;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
 }
 
 .APic {
-    align-items: center;
-    align-self: center;
-    text-align: center;
-    justify-content: center;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  justify-content: center;
 }
 
-@media (max-width : 770px) {
-    .MainText {
-        font-size: 40px;
-    }
+@media (max-width: 770px) {
+  .MainText {
+    font-size: 40px;
+  }
 
-    .SecText {
-        font-size: 20px;
-    }
+  .SecText {
+    font-size: 20px;
+  }
 
-    .MyName {
-        font-size: 30px;
+  .MyName {
+    font-size: 30px;
+  }
 
-    }
+  .MyBio {
+    font-size: 20px;
+  }
 
-    .MyBio {
-        font-size: 20px;
+  .Pic {
+    width: 90%;
+  }
 
-    }
+  .Profile {
+    width: 90%;
+  }
 
-    .Pic {
-        width: 90%;
-    }
-
-    .Profile {
-        width: 90%;
-    }
-
-    .outer-div {
-        width: 100%;
-    }
-
-    .inner-div {
-        width: 100%;
-    }
-
-    .APic img {
-        width: 50%;
-        height: 50%;
-    }
-
-    .skiTit {
-        font-size: 80%;
-    }
-
-    .card h5 {
-        font-size: 80%;
-    }
-
-    .nav-link {
-        font-size: 80%;
-    }
-}
-
-@media (max-width : 992px) {
-    .APic img {
-        width: 80%;
-        height: 80%;
-        align-items: center;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-
-    }
-
-    .skiTit {
-        font-size: 80%;
-    }
-
-    .card h5 {
-        font-size: 80%;
-    }
-
-    .nav-link {
-        font-size: 80%;
-    }
-}
-
-.outer-div {
-    height: 300px;
-    overflow: hidden;
-    width: 40%;
-}
-
-.inner-div {
-    height: 100%;
+  .outer-div {
     width: 100%;
-    background-size: cover;
-    background-position: center;
-    transition: all 0.7s ease;
+  }
+
+  .inner-div {
+    width: 100%;
+  }
+
+  .APic img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .skiTit {
+    font-size: 80%;
+  }
+
+  .card h5 {
+    font-size: 80%;
+  }
+
+  .nav-link {
+    font-size: 80%;
+  }
 }
 
-.inner-div:hover {
-    transform: scale(1.2) rotate(8deg);
-}
-
-.APic img {
-    width: 100px;
-    height: 100px;
+@media (max-width: 992px) {
+  .APic img {
+    width: 80%;
+    height: 80%;
     align-items: center;
     margin: 0 auto;
     left: 0;
     right: 0;
-    display: block;
-    margin-top: 50px;
+  }
+
+  .skiTit {
+    font-size: 80%;
+  }
+
+  .card h5 {
+    font-size: 80%;
+  }
+
+  .nav-link {
+    font-size: 80%;
+  }
+}
+
+.outer-div {
+  height: 300px;
+  overflow: hidden;
+  width: 40%;
+}
+
+.inner-div {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.7s ease;
+}
+
+.inner-div:hover {
+  transform: scale(1.2) rotate(8deg);
+}
+
+.APic img {
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  display: block;
+  margin-top: 50px;
+  transition: 0.5s;
+  transform: scale(1) rotate(-360deg);
 }
 
 .APic img:hover {
-    transition: 0.5s;
-    transform: scale(1.2) rotate(360deg);
+  transition: 0.5s;
+  transform: scale(1.2) rotate(360deg);
 }
 
 .SkillsBk {
-    background-color: #1b1b2f;
-    width: 100%;
-    padding-bottom: 30px;
+  background-color: #1b1b2f;
+  width: 100%;
+  padding-bottom: 30px;
 }
 
 .skiTit {
-    color: #467bbb;
-    font-weight: bold;
+  color: #467bbb;
+  font-weight: bold;
+}
+
+.ProjSec {
+  margin-top: 30px;
+}
+
+.OudLogo {
+  width: 100px;
+  height: 100px;
+}
+
+.PacManLogo {
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+.OudDis {
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  font-size: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  background-color: #00549e;
+  padding-top: 30px;
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .grid-item {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .SI {
+    width: 50px;
+    padding: 0;
+    margin: 0;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .SI a {
+    width: 0px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.ProjectSec {
+  background-color: #00549e;
+  width: 100%;
+}
+
+.grid-item {
+  background-color: rgba(214, 214, 214, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  transition: 0.5s ease;
+
+}
+
+.MP {
+  font-size: 50px;
+  padding-top: 80px;
+  color: white;
+}
+
+
+.containerMOD {
+  width: 50%;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.grid-item img:hover {
+  transition: 0.5s;
+  transform: scale(1.2) rotate(-20deg);
+}
+
+
+
+.ContantSec {
+  background-color: white;
+  padding-top: 80px;
+}
+
+.FormSec {
+  position: absolute;
+}
+
+.Forminp {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+}
+
+textarea.Forminp {
+  resize: none;
+  height: 120px;
+  background: #f1f1f1;
+}
+
+.FormSec {
+  position: relative;
+  margin: auto;
+  max-width: 600px;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  display: block;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+/* Full-width input fields */
+input[type='text'],
+input[type='email'] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type='text']:focus,
+input[type='email']:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.btn {
+  background-color: #4242da;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.btn:hover {
+  background-color: #5f5feb;
+  color: white;
+  opacity: 1;
+}
+
+.ContText {
+  padding-top: 30px;
+  font-size: 180%;
+}
+
+.ContsText {
+  font-size: 150%;
+}
+
+.SI {
+  padding-bottom: 50px;
+  max-width: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.GitIco {
+  width: 150px;
 }

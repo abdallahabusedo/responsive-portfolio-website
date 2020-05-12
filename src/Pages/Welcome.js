@@ -4,6 +4,8 @@ import MyPhoto from './../Component/MyPhoto';
 import IntroduceMySelf from './../Component/IntroduceMySelf';
 import Skills from '../Component/Skills';
 import Projects from './../Component/Projects';
+import Contact from './../Component/Contact';
+import SoicalIcons from './../Component/SoicalIcons';
 export default class Welcome extends Component {
   render() {
     return (
@@ -13,6 +15,8 @@ export default class Welcome extends Component {
         <IntroduceMySelf />
         <Skills />
         <Projects />
+        <Contact />
+        <SoicalIcons />
       </div>
     );
   }
