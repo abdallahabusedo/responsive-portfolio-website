@@ -2,6 +2,12 @@ import React, {Component} from 'react';
 import Logo from './../assets/Images/Logo.png';
 import './Welcome.css';
 class Navbar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      Var: 'main',
+    };
+  }
   render() {
     return (
       <div className="Nave">
@@ -16,30 +22,33 @@ class Navbar extends Component {
             />
           </a>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler text-white"
             type="button"
             data-toggle="collapse"
             data-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            style={{fontSize: '50px'}}
           >
-            <span className="navbar-toggler-icon"></span>
+            =
           </button>
-          <div className="collapse navbar-collapse RightCon row" id="navbarNav">
+
+          <div className="collapse navbar-collapse RightCon" id="navbarNav">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
             <ul className="row ">
               <div className="column EPages">
-                <a className="nav-link nav-links" href="/About">
+                <a className="nav-link nav-links" href="/#about">
                   Home
                 </a>
               </div>
               <div className="column EPages">
-                <a className="nav-link nav-links" href="/Projects">
+                <a className="nav-link nav-links" href="/#projects">
                   Projects
                 </a>
               </div>
               <div className="column EPages">
-                <a className="nav-link nav-links" href="/Contact">
+                <a className="nav-link nav-links" href="/#contact">
                   Contact
                 </a>
               </div>

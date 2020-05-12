@@ -2,11 +2,13 @@ import React, {Component} from 'react';
 import Web from './../assets/Images/web.png';
 import GameDev from './../assets/Images/game-development.png';
 import Arduino from './../assets/Images/flat.png';
+import './Welcome.css';
 export default class Skills extends Component {
   render() {
     return (
       <div className="SkillsBk">
         <div className="container ">
+          <p className="MP"> Skills</p>
           <div className="row container APic ">
             <div className="column">
               <div className="card">
