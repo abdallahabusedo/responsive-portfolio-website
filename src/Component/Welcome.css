@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+}
+
 .Back {
   margin: 0 auto;
   left: 0;
@@ -26,7 +35,7 @@
 }
 
 .RightCon a {
-  color: white;
+  color: var(--bg);
 }
 
 .Nave {
@@ -34,7 +43,10 @@
 }
 
 nav {
-  background: #162447;
+  background: var(--dblue);
+  transition: background 500ms ease-in-out,
+    color 1000ms ease-in-out;
+
 }
 
 .Profile {
@@ -59,11 +71,14 @@ nav {
 }
 
 .MainText {
+  color: var(--white);
+  padding-top: 20px;
   font-size: 50px;
   font-family: 'Play', sans-serif;
 }
 
 .SecText {
+  color: var(--white);
   font-size: 20px;
   font-family: 'Play', sans-serif;
 }
@@ -72,8 +87,11 @@ nav {
   margin-top: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: #1f4068;
+  background-color: var(--bgray);
   height: 50%;
+  transition: background 500ms ease-in-out,
+    color 1000ms ease-in-out;
+
 }
 
 .MyName {
@@ -256,13 +274,15 @@ nav {
 }
 
 .SkillsBk {
-  background-color: #1b1b2f;
+  background-color: var(--black);
   width: 100%;
   padding-bottom: 30px;
+  transition: background 500ms ease-in-out,
+    color 1000ms ease-in-out;
 }
 
 .skiTit {
-  color: #467bbb;
+  color: var(--black);
   font-weight: bold;
 }
 
@@ -294,9 +314,11 @@ nav {
   display: grid;
   grid-template-columns: auto auto;
   padding: 10px;
-  background-color: #00549e;
+  background-color: var(--blacks);
   padding-top: 30px;
   font-weight: bold;
+  transition: background 500ms ease-in-out,
+    color 1000ms ease-in-out;
 }
 
 @media (max-width: 500px) {
@@ -326,21 +348,24 @@ nav {
 }
 
 .ProjectSec {
-  background-color: #00549e;
+  background-color: var(--blacks);
   width: 100%;
+  transition: background 500ms ease-in-out,
+    color 1000ms ease-in-out;
 }
 
 .grid-item {
-  background-color: rgba(214, 214, 214, 0.8);
+  background-color: var(--bg);
   padding: 20px;
   font-size: 30px;
   margin-right: 25px;
   margin-bottom: 25px;
   text-align: center;
   text-decoration: none;
-  color: white;
+  color: var(--white);
   list-style: none;
-  transition: 0.5s ease;
+  transition: background 500ms ease-in-out,
+    color 1000ms ease-in-out;
 
 }
 
@@ -368,13 +393,11 @@ nav {
 
 
 .ContantSec {
-  background-color: white;
+
+  background-color: transparent;
   padding-top: 80px;
 }
 
-.FormSec {
-  position: absolute;
-}
 
 .Forminp {
   display: block;
@@ -387,7 +410,7 @@ nav {
 textarea.Forminp {
   resize: none;
   height: 120px;
-  background: #f1f1f1;
+  background: #c2c1c1;
 }
 
 .FormSec {
@@ -398,7 +421,7 @@ textarea.Forminp {
   left: 0;
   right: 0;
   display: block;
-  background-color: white;
+  background-color: transparent;
   box-sizing: border-box;
 }
 
@@ -409,31 +432,42 @@ input[type='email'] {
   padding: 15px;
   margin: 5px 0 22px 0;
   border: none;
-  background: #f1f1f1;
+  background: #c2c1c1;
+
 }
 
 input[type='text']:focus,
 input[type='email']:focus {
-  background-color: #ddd;
+  background-color: #c2c1c1;
   outline: none;
+
 }
 
 .btn {
-  background-color: #4242da;
+  background-color: var(--button);
   color: white;
   padding: 16px 20px;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 40%;
   opacity: 0.9;
   margin-top: 15px;
   margin-bottom: 40px;
+  transition: background 500ms ease-in-out,
+    color 1000ms ease-in-out;
 }
 
 .btn:hover {
-  background-color: #5f5feb;
+  background-color: var(--bh);
   color: white;
   opacity: 1;
+  transition: background 500ms ease-in-out,
+    color 1000ms ease-in-out;
+
+}
+
+.socialIcons {
+  position: relative;
 }
 
 .ContText {
@@ -445,13 +479,67 @@ input[type='email']:focus {
   font-size: 150%;
 }
 
+.Pics {
+  width: 15%;
+  margin-top: 20px;
+}
+
 .SI {
   padding-bottom: 50px;
   max-width: 100px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
   margin-left: 10px;
   margin-right: 10px;
+  margin-top: 25px;
+  justify-content: center;
 }
 
 .GitIco {
   width: 150px;
+}
+
+.nav-links {
+  color: white !important;
+}
+
+.nav-links:hover {
+  color: var(--hoverr) !important;
+}
+
+
+
+.Togglebutton {
+  width: 50px;
+  font-weight: bolder;
+  color: white;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  float: left;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+
+}
+
+.projectLogo {
+  width: 15%;
+}
+
+.ProjectName {
+  color: var(--white);
+  font-size: 250%;
+}
+
+.ProjectDis {
+  color: var(--white);
+  font-size: 180%;
+}
+.gif{
+  max-width:800px ;
 }

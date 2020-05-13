@@ -10,7 +10,10 @@ export default class Welcome extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <Navbar
+          themeMode={this.props.themeMode}
+          handelThemeOnChange={this.props.handelThemeOnChange}
+        />
         <MyPhoto />
         <IntroduceMySelf />
         <Skills />

@@ -5,7 +5,10 @@ export default class ProjectDetails extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <Navbar
+          themeMode={this.props.themeMode}
+          handelThemeOnChange={this.props.handelThemeOnChange}
+        />
         <Projects />
       </div>
     );

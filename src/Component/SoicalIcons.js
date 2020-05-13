@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Facebook from './../assets/Images/facebook.png';
-import github from './../assets/Images/GitHub.png';
+import github from './../assets/Images/GitHub.jpg';
 import insta from './../assets/Images/insta.png';
 export default class SoicalIcons extends Component {
   render() {
