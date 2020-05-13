@@ -1,14 +1,15 @@
-import React, {Component} from 'react';
+import React, {Component, useState} from 'react';
 import Logo from './../assets/Images/Logo.png';
 import './Welcome.css';
+
 class Navbar extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      Var: 'main',
-    };
+    this.state = {};
   }
+
   render() {
+    const {themeMode} = this.props;
     return (
       <div className="Nave">
         <nav className="navbar navbar-expand-lg fixed-top">
@@ -21,6 +22,20 @@ class Navbar extends Component {
               alt="Logo"
             />
           </a>
+          <div>
+            <div class="nav-item">
+              <button
+                className="nav-link Togglebutton "
+                onClick={this.props.handelThemeOnChange}
+              >
+                {themeMode ? (
+                  <i class="fa fa-star"></i>
+                ) : (
+                  <i class="fa fa-cloud"></i>
+                )}
+              </button>
+            </div>
+          </div>
           <button
             className="navbar-toggler text-white"
             type="button"
