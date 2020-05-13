@@ -17,13 +17,13 @@ export default class Skills extends Component {
                   <h5>Front-End</h5>
                   <hr />
                   <p className="skiTit">Languages that i speak</p>
-                  <ul>
+                  <ul style={{color: 'black'}}>
                     <li className="nav-link card-text"> JS</li>
                     <li className="nav-link card-text"> React</li>
                     <li className="nav-link card-text"> Axios</li>
                   </ul>
                   <p className="skiTit">Where i make my beautiful websites</p>
-                  <ul>
+                  <ul style={{color: 'black'}}>
                     <li className="nav-link">visual Studio Code</li>
                   </ul>
                 </div>
@@ -37,12 +37,12 @@ export default class Skills extends Component {
                   <h5>Games development</h5>
                   <hr />
                   <p className="skiTit">I love to play with this codes</p>
-                  <ul>
+                  <ul style={{color: 'black'}}>
                     <li className="nav-link card-text"> C++</li>
                     <li className="nav-link card-text"> C#</li>
                   </ul>
                   <p className="skiTit"> My Playground</p>
-                  <ul>
+                  <ul style={{color: 'black'}}>
                     <li className="nav-link card-text"> unity </li>
                     <li className="nav-link card-text"> blender</li>
                     <li className="nav-link card-text"> visual Studio </li>
@@ -58,11 +58,11 @@ export default class Skills extends Component {
                   <h5>Robotics</h5>
                   <hr />
                   <p className="skiTit">How about to create a new Robot</p>
-                  <ul>
+                  <ul style={{color: 'black'}}>
                     <li className="nav-link"> C</li>
                   </ul>
                   <p className="skiTit">Tools that can Fix the Robots</p>
-                  <ul>
+                  <ul style={{color: 'black'}}>
                     <li className="nav-link"> Arduino</li>
                     <li className="nav-link"> SmuliDE </li>
                     <li className="nav-link"> Logsim</li>
